@@ -16,3 +16,10 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+
+# sms-tool
+echo 'src-git smstool https://github.com/4IceG/luci-app-sms-tool' >>feeds.conf.default
+echo 'src-git 3ginfo https://github.com/4IceG/luci-app-3ginfo-lite' >>feeds.conf.default
+
+# modemnanager luci
+echo 'src-git luci_proto_modemmanager https://github.com/nickberry17/luci-proto-modemmanager' >>feeds.conf.default
